@@ -5,6 +5,8 @@
  */
 package Abstraccion;
 
+import javax.swing.JComboBox;
+
 /**
  *
  * @author T-101
@@ -72,7 +74,13 @@ public class Ventanita extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+
+
+
+TransformacionGrados trans=
+(TransformacionGrados)  JComboBox.getSelectedIteam();
+jLabel2.setText(""+trans.transformar(Float.parseFloat(jTextField2.getText())));
+// TODO add your handling code here:
         
 //AQUI PEGAMOS EL CODIGO DE EL MAIN APLICACION
 
