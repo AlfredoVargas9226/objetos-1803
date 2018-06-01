@@ -13,11 +13,14 @@ public class Arreglos {
     public static void main(String[] args) {
         
         int []valores={1,-20,4};
-        for (int i=0;i<3;i++){
+        for (int i=0;i<valores.length;i++){
         System.out.println(valores[i]);
     }
         
-        
-        
+      //este clclo for ers el mejorado  y se recoemienda siempre 
+      
+        for(int v:valores){
+            System.out.println(v);
+        }
     }
 }
