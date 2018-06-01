@@ -22,8 +22,12 @@ public class Arreglos {
         for(int v:valores){
             System.out.println(v);
         }
-    }
+    
     
     //2-segunda forma  de inicializar los arreglos 
     int otro[]=new int[4];
+    for (int valor:otro){
+            System.out.println(valor);
+}
+}
 }
