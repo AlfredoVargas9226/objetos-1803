@@ -17,10 +17,13 @@ public class Arreglos {
         System.out.println(valores[i]);
     }
         
-      //este clclo for ers el mejorado  y se recoemienda siempre 
+      //1-este clclo for ers el mejorado  y se recoemienda siempre 
       
         for(int v:valores){
             System.out.println(v);
         }
     }
+    
+    //2-segunda forma  de inicializar los arreglos 
+    int otro[]=new int[4];
 }
