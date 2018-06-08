@@ -9,4 +9,16 @@ import java.util.*;
 public class Pregunta {
     String titulo;
      ArrayList<Opcion> opciones;
+
+    void setTitulo(String cula_es_la_capital_de_españa) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setOpciones(ArrayList<Opcion> opcionesp11) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    boolean getTitulo() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
