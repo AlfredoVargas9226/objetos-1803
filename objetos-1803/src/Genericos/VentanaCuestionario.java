@@ -5,6 +5,7 @@
  */
 package Genericos;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JRadioButton;
 
 /**
@@ -28,6 +29,8 @@ public class VentanaCuestionario extends javax.swing.JFrame {
                // System.out.println(p.getTitulo());
                L1.setTexxo(p.getOpciones());
                jPanel1.add(L1);
+               
+                ButtonGroup grupo= new ButtonGroup();
                }
                 
                 for (Opcion o:p.getOpciones()){
@@ -35,6 +38,7 @@ public class VentanaCuestionario extends javax.swing.JFrame {
                     // System.out.println(o.getTitulo()+""+o.isCorrecta());
                     JRadioButton r=new JRadioButton();
                     r.setTexto(o.getTitulo());
+                    grupo.add(r);
                     jPanel.add(r);
             }
                 JRadioButton=new JButton("checar respuesta");
