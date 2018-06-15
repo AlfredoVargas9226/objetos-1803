@@ -12,42 +12,9 @@ package Genericos;
 import java.util.*;
 public class AplicacionPregunta {
     public static void main(String[] args) {
-        //generamos las opciones
-        Opcion o11=new Opcion();
-        o11.setTitulo("Mizcalco");
-        o11.setCorrecta(false);
-                
-        Opcion o21=new Opcion();
-        o21.setTitulo("TExcoco");
-        o21.setCorrecta(false);
-       
-         Opcion o31=new Opcion();
-         o31.setTitulo("Madrid");
-         o31.setCorrecta(true);
-       
-         
-         Opcion  o41=new Opcion();
-         o41.setTitulo("Ecatepec");
-         o41.setCorrecta(false);
-         
-         //sigue la pregunta
-         Pregunta p11=new Pregunta();
-         p11.setTitulo("cula es la capital de españa");
-         //antes generamos el arrayñlist con las opciones de arriba
-          ArrayList<Opcion> opcionesp11=new ArrayList<>();
-          opcionesp11.add(o11);
-          opcionesp11.add(o21);
-          opcionesp11.add(o31);
-          opcionesp11.add(o41);
-          //ahpora agregamos  el arraylist en la primera pregunta
-          p11.setOpciones(opcionesp11);
-          
-          // sigue el cuestionario c1
-          Cuestionario c1=new Cuestionario();
-            ArrayList<Pregunta> preguntas=new ArrayList<>();
-            c1.setPreguntas(preguntas);
+     GeneradorCuestionario generador=new GeneradorCuestionario();
             
-            for(Pregunta p:preguntas){
+            for(Pregunta p:generador.getCuestionarios().getPreguntas()){
                 System.out.println(p.getTitulo());
                 
                 for (Opcion o:p.getOpciones()){
