@@ -11,6 +11,11 @@ public class Cliente { //paso 3 generacion de contructor
 private String nombre;
 private Tarjeta tarjeta;
 
+    @Override
+    public String toString() {
+        return "Cliente{" + "nombre=" + nombre + ", tarjeta=" + tarjeta + '}';
+    }
+
     public Cliente(String nombre, Tarjeta tarjeta) {
         this.nombre = nombre;
         this.tarjeta = tarjeta;

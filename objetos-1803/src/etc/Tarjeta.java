@@ -21,6 +21,11 @@ public class Tarjeta { // paso 1uno encapsularmiento
         this.saldo = saldo;
     }
 
+    @Override
+    public String toString() {
+        return "Tarjeta{" + "numero=" + numero + ", nombre=" + nombre + ", saldo=" + saldo + '}';
+    }
+
     public float getSaldo() {
         return saldo;
     }
