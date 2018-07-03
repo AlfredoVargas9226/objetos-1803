@@ -11,7 +11,7 @@ public class PrimerasExcepciones {  //metodo main
        int arreglo[]={3,4,2};
        System.out.println("hola mundo");
       // System.out.println(arreglo[3]);
-      String numeroMalo="4";
+      String numeroMalo="cuatro";
       int numeroBueno=Integer.parseInt(numeroMalo);
         System.out.println(numeroBueno*2);
        System.out.println("no me veras");
