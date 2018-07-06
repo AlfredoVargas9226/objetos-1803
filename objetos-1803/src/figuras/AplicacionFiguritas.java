@@ -97,13 +97,13 @@ public class AplicacionFiguritas extends javax.swing.JFrame {
             
             float valor= Float.parseFloat(jTextField1.getText());
             ValidarValores.validarNoNegativo(valor);
-        } Cuadrado c=new Cuadrado();
+         Cuadrado c=new Cuadrado();
         c.setLado(valor);
         Calculos cal=new Calculos();
         jLabel2.setText(cal.calculararArea(c));
        } catch (ValorNegativoException ex) {
          jLabel2.setText(ex.getMessage()); 
-         }catch(NumberFormatException e){
+       }  catch(NumberFormatException e){
          jLabel2.setText("no metas texto pendejo");
                  }
          
